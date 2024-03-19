@@ -13,29 +13,37 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+| [en_US](README.en.md) | [简体中文](README.md) |
+| ------------------ | ----------------------- |
 
-## Features
+一个 Flutter 日志工具，支持打印日志到控制台，写入文件，打印错误信息，搜集崩溃信息等。*（谨慎使用，正在开发中...）*
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## 特性
 
-## Getting started
+- [x] <span style="color: lightgreen;">支持打印日志到控制台</span>
+- [x] <span style="color: lightgreen;">支持打印错误信息到控制台</span>
+- [ ] 支持写入日志文件
+- [ ] 支持搜集崩溃信息
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 安装
 
-## Usage
+运行下面的命令:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Dart:
 
-```dart
-const like = 'sample';
+```
+dart pub add flutter_sm_logger
 ```
 
-## Additional information
+Flutter:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```
+flutter pub add flutter_sm_logger
+```
+
+或者在 `pubspec.yaml` 文件中添加依赖并运行`dart pub get`：
+
+```
+dependencies:
+  flutter_sm_logger: ^0.0.1
+```
