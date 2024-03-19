@@ -1,5 +1,5 @@
 name: flutter_sm_logger
-description: "A new Flutter package project."
+description: "A Flutter logging tool that supports printing logs to the console, writing to files, printing error information, collecting crash information, etc."
 version: 0.0.1
 homepage: https://github.com/shay-wong/flutter_sm_logger
 
