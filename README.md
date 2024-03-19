@@ -13,7 +13,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-| [en_US](README.en.md) | [简体中文](README.md) |
+| [简体中文](README.md) | [English](README.en.md) |
 | ------------------ | ----------------------- |
 
 一个 Flutter 日志工具，支持打印日志到控制台，写入文件，打印错误信息，搜集崩溃信息等。*（谨慎使用，正在开发中...）*
