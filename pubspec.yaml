@@ -2,14 +2,7 @@ name: flutter_sm_logger
 description: "A Flutter logging tool that supports printing logs to the console, writing to files, printing error information, collecting crash information, etc."
 version: 0.0.2
 homepage: https://github.com/shay-wong/flutter_sm_logger
-
-platforms:
-  android:
-  ios:
-  linux:
-  macos:
-  web:
-  windows:
+repository: https://github.com/shay-wong/flutter_sm_logger
 
 environment:
   sdk: ">=2.17.0 <4.0.0"
@@ -24,3 +17,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
