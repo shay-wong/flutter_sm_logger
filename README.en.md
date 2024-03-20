@@ -9,15 +9,15 @@ A simple logger for flutter app
 
 - [x] <span style="color: lightgreen;">Support printing logs to the console</span>
 - [x] <span style="color: lightgreen;">Support printing error messages to the console</span>
-- [ ] Support writing logs to a file
-- [ ] Support collecting crash information
+- [ ] <span style="color: #A9A9A9;">Support writing logs to a file</span>
+- [ ] <span style="color: #A9A9A9;">Support collecting crash information</span>
 
 <!-- ## Getting started
 
 TODO: List prerequisites and provide or point to information on how to
 start using the package. -->
 
-## Usage
+## Installing
 
 Depend on it
 
@@ -31,11 +31,13 @@ With Flutter:
 ```
 flutter pub add flutter_sm_logger
 ```
-Maybe add the line like this to your package's `pubspec.yaml` and run `dart pub get`：
+Or add the dependency to your `pubspec.yaml` file and run `dart pub get`:
 ```
 dependencies:
   flutter_sm_logger: ^0.0.1
 ```
+
+<!-- ## Usage -->
 
 <!-- ## Additional information
 
