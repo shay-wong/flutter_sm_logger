@@ -1,3 +1,7 @@
+## 0.0.4
+
+* export logger.
+
 ## 0.0.3
 
 * Rename.
