@@ -2,22 +2,20 @@ import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';
 
 const consoleOutputLength = 90;
+const methodCount = 3;
+const errorMethodCount = 8;
 
 /// 是否打印日志, 默认为 [kDebugMode]
 bool get kPrintable => const bool.fromEnvironment("PRINTABLE", defaultValue: kDebugMode);
 
-final logger = MLogger(
-  filter: MLogFilter(),
-  level: Level.all,
-  printer: MPrettyPrinter(),
-);
+final logger = MLogger();
 
 class MPrettyPrinter extends PrettyPrinter {
   MPrettyPrinter({
     super.stackTraceBeginIndex = 0,
-    super.methodCount = 3,
-    super.errorMethodCount = 8,
-    super.lineLength = 90,
+    super.methodCount = methodCount,
+    super.errorMethodCount = errorMethodCount,
+    super.lineLength = consoleOutputLength,
     super.colors = true,
     super.printEmojis = true,
     super.printTime = true,
@@ -29,7 +27,8 @@ class MPrettyPrinter extends PrettyPrinter {
   }) : super(
           excludePaths: [
             ...excludePaths,
-            'packages/flutter_sm_logger/src/m_logger.dart',
+            'packages/flutter_sm_logger',
+            'package:flutter_sm_logger',
           ],
         );
 }
