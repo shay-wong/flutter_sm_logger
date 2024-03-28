@@ -1,3 +1,8 @@
+## 0.0.5
+
+* update pubspec.
+* exclude paths.
+
 ## 0.0.4
 
 * export logger.

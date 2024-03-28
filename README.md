@@ -1,51 +1,46 @@
 # flutter_sm_logger
 
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+| [English](README.md) | [简体中文](README.zh.md) |
+| ------------------ | ----------------------- |
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A simple logger for flutter app
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Features
 
-| [简体中文](README.md) | [English](README.en.md) |
-| ----------------- | ----------------------- |
+- [x] <span style="color: lightgreen;">Support printing logs to the console</span>
+- [x] <span style="color: lightgreen;">Support printing error messages to the console</span>
+- [ ] <span style="color: #A9A9A9;">Support writing logs to a file</span>
+- [ ] <span style="color: #A9A9A9;">Support collecting crash information</span>
 
-一个 Flutter 日志工具，支持打印日志到控制台，写入文件，打印错误信息，搜集崩溃信息等。*（谨慎使用，正在开发中...）*
+<!-- ## Getting started
 
-## 特性
+TODO: List prerequisites and provide or point to information on how to
+start using the package. -->
 
-- [x] <span style="color: lightgreen;">支持打印日志到控制台</span>
-- [x] <span style="color: lightgreen;">支持打印错误信息到控制台</span>
-- [ ] <span style="color: #A9A9A9;">支持写入日志文件</span>
-- [ ] <span style="color: #A9A9A9;">支持搜集崩溃信息</span>
+## Installing
 
-## 安装
+Depend on it
 
-运行下面的命令:
+Run this command:
 
-Dart:
-
+With Dart:
 ```
 dart pub add flutter_sm_logger
 ```
-
-Flutter:
-
+With Flutter:
 ```
 flutter pub add flutter_sm_logger
 ```
-
-或者在 `pubspec.yaml` 文件中添加依赖并运行`dart pub get`：
-
+Or add the dependency to your `pubspec.yaml` file and run `dart pub get`:
 ```
 dependencies:
   flutter_sm_logger: ^0.0.1
 ```
 
-<!-- ## 使用 -->
+<!-- ## Usage -->
+
+<!-- ## Additional information
+
+TODO: Tell users more about the package: where to find more information, how to
+contribute to the package, how to file issues, what response they can expect
+from the package authors, and more. -->

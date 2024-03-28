@@ -9,15 +9,30 @@ bool get kPrintable => const bool.fromEnvironment("PRINTABLE", defaultValue: kDe
 final logger = MLogger(
   filter: MLogFilter(),
   level: Level.all,
-  printer: PrettyPrinter(
-    printTime: true,
-    lineLength: consoleOutputLength,
-    methodCount: 3,
-    excludePaths: [
-      'packages/flutter_sm_logger/src/logger.dart',
-    ],
-  ),
+  printer: MPrettyPrinter(),
 );
+
+class MPrettyPrinter extends PrettyPrinter {
+  MPrettyPrinter({
+    super.stackTraceBeginIndex = 0,
+    super.methodCount = 3,
+    super.errorMethodCount = 8,
+    super.lineLength = 90,
+    super.colors = true,
+    super.printEmojis = true,
+    super.printTime = true,
+    super.excludeBox = const {},
+    super.noBoxingByDefault = false,
+    List<String> excludePaths = const [],
+    super.levelColors,
+    super.levelEmojis,
+  }) : super(
+          excludePaths: [
+            ...excludePaths,
+            'packages/flutter_sm_logger/src/m_logger.dart',
+          ],
+        );
+}
 
 class MLogFilter extends LogFilter {
   @override
@@ -35,11 +50,15 @@ class MLogFilter extends LogFilter {
 
 class MLogger extends Logger {
   MLogger({
-    super.filter,
-    super.printer,
+    LogFilter? filter,
+    LogPrinter? printer,
     super.output,
-    super.level,
-  });
+    Level? level,
+  }) : super(
+          filter: filter ?? MLogFilter(),
+          printer: printer ?? MPrettyPrinter(),
+          level: level ?? Level.all,
+        );
 
   /// Log a message at level [Level.debug].
   @override
