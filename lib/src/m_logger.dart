@@ -27,8 +27,9 @@ class MPrettyPrinter extends PrettyPrinter {
   }) : super(
           excludePaths: [
             ...excludePaths,
-            'packages/flutter_sm_logger',
-            'package:flutter_sm_logger',
+            // 默认排除掉 sm_ 库相关的日志
+            'packages/sm_',
+            'package:sm_',
           ],
         );
 }
