@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sm_logger/sm_logger.dart';
+import 'package:sm_logger/sm_logger.dart';
 
 void main() {
   runApp(const MyApp());
