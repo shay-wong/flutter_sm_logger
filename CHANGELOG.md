@@ -1,3 +1,9 @@
+# sm_logger
+
+## 0.0.8
+
+* update pubspec.
+
 ## 0.0.7
 
 * rename.
