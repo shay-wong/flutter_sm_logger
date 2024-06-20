@@ -1,5 +1,9 @@
 # sm_logger
 
+## 0.0.9
+
+* Remove flutter environment dependency.
+
 ## 0.0.8
 
 * update pubspec.

@@ -1,12 +1,14 @@
-import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';
 
 const consoleOutputLength = 90;
 const methodCount = 3;
 const errorMethodCount = 8;
 
+const bool _kProfileMode = bool.fromEnvironment('dart.vm.profile');
+const bool _kReleaseMode = bool.fromEnvironment('dart.vm.product');
+const bool _kDebugMode = !_kReleaseMode && !_kProfileMode;
 /// 是否打印日志, 默认为 [kDebugMode]
-bool get kPrintable => const bool.fromEnvironment("PRINTABLE", defaultValue: kDebugMode);
+bool get kPrintable => const bool.fromEnvironment("PRINTABLE", defaultValue: _kDebugMode);
 
 final logger = MLogger();
 
@@ -139,6 +141,6 @@ class MLogger extends Logger {
   }
 
   void p(dynamic message) {
-    if (kPrintable) debugPrint('$message');
+    if (kPrintable) print('$message');
   }
 }
