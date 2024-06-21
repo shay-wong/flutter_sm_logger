@@ -1,5 +1,9 @@
 # sm_logger
 
+## 0.0.10
+
+* change print to debugPrint.
+
 ## 0.0.9
 
 * Remove flutter environment dependency.

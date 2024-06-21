@@ -1,5 +1,7 @@
 import 'package:logger/logger.dart';
 
+import 'm_print.dart';
+
 const consoleOutputLength = 90;
 const methodCount = 3;
 const errorMethodCount = 8;
@@ -141,6 +143,6 @@ class MLogger extends Logger {
   }
 
   void p(dynamic message) {
-    if (kPrintable) print('$message');
+    if (kPrintable) debugPrint('$message');
   }
 }
